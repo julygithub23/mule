@@ -5,11 +5,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="b2c93e0b-cb87-40c5-b8b5-1e7eb8407489" >
-		<http:listener-connection host="0.0.0.0" port="8011" />
+		<http:listener-connection host="0.0.0.0" port="8044" />
 	</http:listener-config>
 	<flow name="commonprojectFlow" doc:id="55432bf3-45f3-46d0-969a-3f14820e3109" >
 		<http:listener doc:name="Listener" doc:id="34f1434c-3705-42af-a37a-7fd44a6655a2" config-ref="HTTP_Listener_config" path="/commonp"/>
-		<logger level="INFO" doc:name="Logger" doc:id="6babffb9-f79e-488e-974e-fee654252e17" message="Hassen"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6babffb9-f79e-488e-974e-fee654252e17" message="Gondor44"/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="5d54c0b9-48d6-4d90-bc92-8147bd75cd7e" />
 	</flow>
 </mule>
